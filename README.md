@@ -72,7 +72,7 @@ npm run test:e2e
 
 ## Деплой на GitHub Pages
 
-Сайт: <https://regkriks-star.github.io/StalkerTamagochi/> (после первого успешного деплоя). `base` в `vite.config.ts`, manifest, scope и start_url — `/StalkerTamagochi/`, поэтому имя репозитория менять нельзя без правки конфига. Сборка отключает source maps; в `dist/` попадают только файлы сайта и лицензии зависимостей.
+Сайт: <https://regkriks-star.github.io/StalkerTamagochi/>. `base` в `vite.config.ts`, manifest, scope и start_url — `/StalkerTamagochi/`, поэтому имя репозитория менять нельзя без правки конфига. Сборка отключает source maps; в `dist/` попадают только файлы сайта и лицензии зависимостей.
 
 **`npm run build` ничего не публикует.** Деплой выполняет workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) при каждом пуше в `main`: ставит зависимости, собирает `npm run build` и отправляет `dist/` в GitHub Pages.
 

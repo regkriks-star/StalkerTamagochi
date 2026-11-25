@@ -42,7 +42,7 @@
 | `vite build` | ✅ | JS ~321 кБ, CSS ~55 кБ; precache ~2,9 MiB |
 | Юнит-тесты | ✅ | 22/22; `npm test` компилирует локальным TypeScript |
 | E2E | ✅ | 11/11 на 20.11.2026; конфиг собирает `dist` |
-| Живой сайт | ⏳ | Первый деплой через GitHub Actions ещё не выполнен |
+| Живой сайт | ✅ | HTTP 200; первый деплой через GitHub Actions — 25.11.2026 |
 | Git / CI | ✅ | Исходники в `regkriks-star/StalkerTamagochi`; verify + deploy в Actions |
 | Лицензия | ❌ | Нет `LICENSE`, только лицензии зависимостей |
 

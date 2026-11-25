@@ -103,7 +103,8 @@ npm run test:e2e       # Playwright; сам собирает dist и подни�
 - E2E — 11/11 (20.11.2026); конфиг сам собирает `dist`, timeout 90 с,
   retries в CI. Подробности — [`TESTING.md`](docs/knowledge/TESTING.md).
 - Исходники в Git: ветка `main`, remote `origin` →
-  `regkriks-star/StalkerTamagochi`; первый push ещё не выполнен.
+  `regkriks-star/StalkerTamagochi`; первый push и деплой выполнены 25.11.2026,
+  сайт отдаёт 200.
 - Деплой — `.github/workflows/deploy.yml`; Pages нужно один раз включить вручную:
   Settings → Pages → Source: GitHub Actions.
 - Нет `LICENSE`; лицензии зависимостей лежат в `dist/licenses/`.

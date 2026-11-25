@@ -6,7 +6,7 @@
 
 > **25.11.2026:** исходники перенесены в Git
 > (`regkriks-star/StalkerTamagochi`), деплой — GitHub Actions. Первый push и
-> включение Pages ещё не выполнены.
+> деплой выполнены; сайт отдаёт 200.
 
 ## 1. Окружение
 
@@ -172,8 +172,8 @@ node -e "fetch('https://regkriks-star.github.io/StalkerTamagochi/').then(r=>cons
 `assets/index-*.js` и `assets/index-*.css` должны совпадать. Полезно также
 сравнить `sw.js` и `manifest.webmanifest`.
 
-Первый деплой появляется только после включения Pages и успешного run
-workflow; до этого адрес отдаёт 404.
+Первый деплой выполнен 25.11.2026 (run `45654514315`); адрес отдаёт 200.
+До включения Pages и успешного run workflow адрес отдавал 404.
 
 ## 8. Откат
 
