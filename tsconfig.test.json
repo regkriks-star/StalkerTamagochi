@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "allowImportingTsExtensions": false,
+    "rewriteRelativeImportExtensions": true,
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "outDir": ".tmp-tests",
+    "rootDir": "src"
+  },
+  "include": ["src/game.ts", "src/game.test.ts"]
+}
