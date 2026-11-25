@@ -76,7 +76,7 @@ npm run test:e2e
 
 **`npm run build` ничего не публикует.** Деплой выполняет workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) при каждом пуше в `main`: ставит зависимости, собирает `npm run build` и отправляет `dist/` в GitHub Pages.
 
-Разовая настройка на GitHub: workflow пытается включить Pages сам (`enablement: true`); если GitHub этого не разрешит — **Settings → Pages → Source: GitHub Actions** (ветку не выбирать). После этого каждый пуш в `main` обновляет сайт; ход деплоя виден на вкладке **Actions**.
+Разовая настройка на GitHub: **Settings → Pages → Source: GitHub Actions** (ветку не выбирать). Токен workflow не может включить Pages сам, поэтому этот шаг делается вручную один раз. После этого каждый пуш в `main` обновляет сайт; ход деплоя виден на вкладке **Actions**.
 
 SSH-доступ настраивается один раз: ключ `~/.ssh/id_ed25519`, публичная часть добавляется в **Settings → SSH and GPG keys**. Проверка: `ssh -T git@github.com` → `Hi regkriks-star!`.
 

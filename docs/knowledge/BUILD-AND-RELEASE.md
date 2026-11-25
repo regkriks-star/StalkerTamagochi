@@ -140,8 +140,9 @@ git@github.com:regkriks-star/StalkerTamagochi.git
    Settings → SSH and GPG keys.
 2. Проверить доступ: `ssh -T git@github.com`; ожидается
    `Hi regkriks-star!`, код выхода 1 с приветствием — норма.
-3. Pages: workflow включает его сам (`enablement: true`); если GitHub откажет —
-   Settings → Pages → Source: **GitHub Actions** (не «Deploy from a branch»).
+3. Pages: Settings → Pages → Source: **GitHub Actions** (не
+   «Deploy from a branch»). Включить нужно вручную: `GITHUB_TOKEN` не имеет
+   прав на создание Pages-сайта.
 4. Первый push: `git push -u origin main`.
 
 ### Что делает workflow

@@ -16,7 +16,7 @@
   `https://api.github.com/meta` и добавлены в `known_hosts`.
 - Деплой переведён на `.github/workflows/deploy.yml`: push в `main` собирает
   `dist` и публикует его через GitHub Pages (Source: GitHub Actions).
-  `configure-pages` с `enablement: true` пытается включить Pages сам.
+  Pages включается вручную: `GITHUB_TOKEN` не может создать сайт.
 - Удалены `scripts/publish.mjs`, `scripts/publish.test.mjs`, команды
   `test:publish`/`publish:psyselfhelp` и маркер `public/.zone-build.json`:
   старый force-push в `gh-pages` аккаунта `psyselfhelp` больше не нужен.

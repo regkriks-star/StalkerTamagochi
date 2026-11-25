@@ -104,8 +104,8 @@ npm run test:e2e       # Playwright; сам собирает dist и подни�
   retries в CI. Подробности — [`TESTING.md`](docs/knowledge/TESTING.md).
 - Исходники в Git: ветка `main`, remote `origin` →
   `regkriks-star/StalkerTamagochi`; первый push ещё не выполнен.
-- Деплой — `.github/workflows/deploy.yml`; Pages workflow включает сам, при
-  отказе — вручную Settings → Pages → Source: GitHub Actions.
+- Деплой — `.github/workflows/deploy.yml`; Pages нужно один раз включить вручную:
+  Settings → Pages → Source: GitHub Actions.
 - Нет `LICENSE`; лицензии зависимостей лежат в `dist/licenses/`.
 
 ## Definition of done
